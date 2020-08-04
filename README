@@ -1,0 +1,50 @@
+The Reliability of Networks, a 3H project for the Department of Computer Science
+University of Durham
+
+By Richard James Kendall, richard.kendall@gmail.com
+Supervised by Hajo Broersma, hajo.broersma@durham.ac.uk
+
+README:
+
+The readme:
+
+REQUIREMENTS:
+
+	Java 1.4.2 or higher (1.5.0 has the nice 'Ocean' Swing interface) http://java.sun.com/
+	GraphViz v2.2 or higher (uses the neato tool) http://www.graphviz.org/
+
+RUNNING:
+	
+This program finds the NEATO executable file by looking in your environment
+for the variable NEATO which should point to the NEATO executable.  If you
+are using a linux or unix computer you can find it by executing the following
+command:
+
+	'whereis neato' (or 'which neato')
+
+Once you know where it is the following command will add the NEATO varible to your
+environment:
+
+	'export NEATO=/usr/bin/neato' (replaced with the location of your neato tool)
+
+(The commands may vary on a system by system basis, check the documentation which came with your OS
+if you are having problems.)
+
+The program can then be started in the following ways:
+
+	Cd to the directory containing the extracted files.
+
+Then:
+
+	Executing the supplied script 'start'; './start'
+	Or, 'java -jar -Dneato=$NEATO GraphGUI.jar'
+
+There are several example graph definition files in the 'examples/' directory under the directory
+containing the extracted files.
+
+SOURCE CODE:
+
+The Java source for this program can be found in the 'src/' directory under the directory
+containing the extracted files.  It can be compiled by executing the following command:
+
+	'javac *.java'

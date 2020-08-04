@@ -1,0 +1,4 @@
+#!/bin/sh
+
+java -jar -Dneato=$NEATO GraphGUI.jar
+
